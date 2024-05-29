@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&N-HandBag.com</title>
+    <link rel="stylesheet" type="text/css" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--i tried many link this is the only one that works for icons from font awesome-->
+</head>
+<body>
+   
+
+    <script type="module">
+
+        import {prooduct} from './product.js'
+
+        let urlString = window.location.href;//get the current URL
+        let paramString = urlString.split('?')[1];
+        //This method splits the string into an array of substrings based on the specified delimiter, which in this case is '?'
+        //For example, if the URL is "http://example.com/page?name=John&age=25", then paramString will be "name=John&age=25".
+        let queryString = new URLSearchParams(paramString);//objact
+
+        let productId = 0;
+        for (let pair of queryString.entries()) {
+            productId = pair[1];
+
+        }
+
+        // this for product name 
+        let ProductNameTag=document.querySelector('.Nametag')
+        let prouductname = document.createTextNode(prooduct[productId].name);
+        ProductNameTag.appendChild(prouductname);
+
+        // this for description 
+        let ProductDesTag = document.querySelector('.prouductdes');
+        let ProductDes = document.createTextNode(prooduct[productId].dis)
+        ProductDesTag.appendChild(ProductDes);
+
+        //this for price
+        let ProductPriceTag = document.querySelector('.ProductPrice');
+        let ProductPrice = document.createTextNode(prooduct[productId].price)
+        ProductPriceTag.appendChild(ProductPrice);
+
+        // this for image
+        let ProductImageTag = document.querySelector('.productimg');
+        ProductImageTag.src = prooduct[productId].img;
+
+    
+
+       </script>
+    
+        
+    <section id="header" >
+
+        <a href="home.html"><img src="imgs/Transparent Logo.png" class="logo" alt=""></a>
+    
+    <div>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shope</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+    
+        </ul>
+    </div>
+    
+    
+    </section>
+    <section class="allDetalis">
+        <div class="details_img">
+            <img src="imgs/welcom2.jpg" alt="Image 2" class="productimg">
+        </div>
+        <div class="details_data">
+            <div class="productName">
+
+                <label for="productName" class="Nametag">Product Name:  </label>
+
+
+            </div>
+            <div class="productCollection">
+                <label for="productCollection" class="prouductdes">Product Collection:</label>
+                
+            </div>
+            <div class="productPrice">
+                <label for="productPrice" class="ProductPrice">Product Price:</label>
+                
+            </div>
+        
+        </div>
+
+    </section>
+    <section class="video">
+        <video class="details-video" autoplay muted loop >
+            <source src="vidios/detailsVidio.mp4" type="video/mp4">
+            <source src="vidios/detailsVidio.webm" type="video/webm">
+            <source src="vidios/detailsVidio.ogg" type="video/ogg">
+        </video>
+
+    </section>
+
+
+
+
+
+    <section class="footer">
+        <div class="payment-cards">
+         
+      <div class="cardsINrow">
+         <i class="fa-brands fa-cc-visa"></i>
+         <i class="fa-brands fa-cc-amazon-pay" style="color: #9485a3;"></i>
+         <i class="fa-brands fa-cc-mastercard"></i>
+         <i class="fa-brands fa-apple-pay"></i>
+         <i class="fa-brands fa-alipay" style="color: #511f48;"></i>
+         <i class="fa-brands fa-cc-amex"></i>
+         <i class="fa-brands fa-google-pay" style="color: #1f4751;"></i> 
+         <i class="fa-brands fa-cc-visa"></i>
+         <i class="fa-brands fa-cc-amazon-pay" style="color: #9485a3;"></i>
+         <i class="fa-brands fa-cc-mastercard"></i>
+         <i class="fa-brands fa-apple-pay"></i>
+         <i class="fa-brands fa-alipay" style="color: #511f48;"></i>
+         <i class="fa-brands fa-cc-amex"></i>
+         <i class="fa-brands fa-google-pay" style="color: #1f4751;"></i> 
+     
+      </div>
+         <h3 class="move">COPYRIGHT © 2023 LAST MINUTE LUXE . </h3>
+     </section>
+      
+  
+  <script src="orjinalJava.js"></script>
+    
+  </body>
+    
+  </html>

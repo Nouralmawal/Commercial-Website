@@ -1,0 +1,5 @@
+C:\Users\noura\source\repos\oop_lab_exam\oop_lab_exam\obj\Debug\net6.0-windows\oop_lab_exam.csproj.AssemblyReference.cache
+C:\Users\noura\source\repos\oop_lab_exam\oop_lab_exam\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\noura\source\repos\oop_lab_exam\oop_lab_exam\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\noura\source\repos\oop_lab_exam\oop_lab_exam\obj\Debug\net6.0-windows\oop_lab_exam_MarkupCompile.cache
+C:\Users\noura\source\repos\oop_lab_exam\oop_lab_exam\obj\Debug\net6.0-windows\oop_lab_exam_MarkupCompile.lref

@@ -1,0 +1,160 @@
+/*this is google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: linear-gradient(to right, #E8D8BF, #C6AB8E);  height: 20px;
+  border-radius: 5px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+
+
+
+#header img{
+height: 65px;
+width: 65px;
+
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3 ease; /* the changing in color when hover*/
+}
+#navbar li a:hover,
+#navbar li a:active /* here if this is the active page it will be highlighted*/
+{
+  color: #F7A6A6;
+
+}
+
+.allDetalis{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin: 30px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.details_img , .details_data{
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  margin: 20px 20px;
+}
+
+.details_img img{
+    height: 380px;
+    box-sizing: border-box;
+    margin-right: 50px;
+    border-radius: 5px;
+
+  }
+.details_data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height:380px ;
+}
+.details_data label{
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  text-shadow:1px  rgb(255, 255, 255,0.5) ;
+  line-height: 30px;
+}
+
+.video {
+  height: 300px;
+    width: 100%;
+    margin: 30px 0;
+}
+.video video{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+
+}
+
+/*  footer */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #C6AB8E;/* navigation bar color  https://redketchup.io/color-picker   */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /*from x 0 from y 5 radios 15 rgba  0 0 0 0*/
+  height: 110px;
+  margin-top: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 20px;
+  overflow: hidden;
+}
+.payment-cards{
+  display: inline;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.cardsINrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px; /*  the spacing between icons */
+  white-space: nowrap;
+ animation: 8s slide infinite linear;
+
+}
+.cardsINrow:hover{
+animation-play-state: paused;
+
+}
+
+
+.cardsINrow i {
+  font-size: 36px; /*  the  size of icons */
+}
+.cardsINrow i {
+  font-size: 36px; /* Adjust the size of the icons */
+  transition: transform 0.3s ease-in-out; /* Add a transition for a smoother effect */
+}
+
+.cardsINrow i:hover {
+  transform: scale(1.3); /* Increase the size on hover */
+}
+
+@keyframes slide{
+from{transform: translateX(0);}
+to{transform: translateX(-50%);}
+}
+  
